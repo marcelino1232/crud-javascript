@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="index.css">
+<title>Title</title>
+</head>
+<body>
+     <div class="container-fluid">
+        <div class="jumbotron">
+            <p class="lead">Crud javascript</p>
+            <hr class="my-4">
+            <p>Praticando javascript</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+          <form>
+              <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="txtID">Id</label>
+                        <input id="txtID" class="form-control" type="nuber" name="" placeholder="Id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtApellido">Apellido</label>
+                        <input id="txtApellido" class="form-control" type="text" name="" placeholder="Apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtTelefono">Telefono</label>
+                        <input id="txtTelefono" class="form-control" type="text" name="" placeholder="Telefono..." required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="txtNombre">Nombre</label>
+                        <input id="txtNombre" class="form-control" type="text" name="" placeholder="Nombre..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtEdad">Edad</label>
+                        <input id="txtEdad" class="form-control" type="text" name="" placeholder="Edad..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtCedular">Cedular</label>
+                        <input id="txtCedular" class="form-control" type="text" name="" placeholder="Cedular..." required>
+                    </div>
+                  </div>
+                <div class="col-md-12">
+                    <div class="text-right">
+                        <button type="button" id="btnlimpiar" class="btn btn-primary">Limpiar</button>
+                        <button type="button" id="btnEnviar" class="btn btn-success">Guardar</button>
+                     </div>
+                </div>
+              </div>
+          </form>
+          </div>
+          <div class="col-md-6">
+              <div class="col-md-12 my-5">
+                  <div class="text-right">
+                    <input type="text" class="inputbuscar" id="txtBuscar" onchange="Filtrar()" placeholder="Buscar...">
+                  </div>
+              </div>
+              <table id="table" class="table table-light">
+                    <div id="nohay" class="text-danger text">
+                        <p>Datos No Encontrado</p>
+                     </div>
+              </table>
+          </div>
+        </div>
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
